@@ -1,0 +1,333 @@
+.review {
+  width: 100%;
+  height: 102px;
+  background-color: #fff;
+  box-shadow: 0px 4px 20px #eef0f2;
+  border-radius: 5px;
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../img/cards.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.review_title {
+  font-family: "Lato Black";
+  font-size: 22px;
+  line-height: 32px;
+  color: #333e50;
+}
+
+.review_description {
+  font-size: 16px;
+  line-height: 23px;
+  color: #333e50;
+  margin-top: 2px;
+}
+
+.review_info {
+  margin-top: 4px;
+}
+
+.review-button {
+  width: 170px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 4px;
+}
+
+@media (max-width: 1280px) {
+  main,
+  .header .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .info-bar,
+  .footer_price_description,
+  .sub-header_card p {
+    font-size: 12px;
+  }
+
+  .footer_price_description {
+    white-space: nowrap;
+  }
+
+  .footer_price_sum {
+    font-size: 14px;
+  }
+  .footer_label {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  .sub-header_card {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sub-header {
+    height: 60px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  header .sub-header_card {
+    min-width: auto;
+    height: 60px;
+    padding-top: 0;
+  }
+  .sub-header_card:first-child,
+  .sub-header_card:last-child {
+    padding: 0 14px;
+  }
+
+  .sub-header_card img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  header .sub-header_card {
+    flex-direction: row;
+  }
+  .sub-header_card p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .info-bar {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 13px;
+    padding: 16px 0;
+  }
+  .info-bar_sorted {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .info-bar_sort {
+    margin-top: 10px;
+  }
+  .mobile_card_info,
+  .mobile_card_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card_view_status,
+  .card_footer .card_footer_order,
+  .card_footer_request,
+  .card_details,
+  .card_support,
+  .card_title_desktop {
+    display: none;
+  }
+  .card_content {
+    padding: 20px 0 0 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card_info {
+    order: 2;
+  }
+  .card_view {
+    order: 1;
+    padding-left: 0;
+    width: 100%;
+    min-width: auto;
+  }
+  .pagination {
+    height: auto;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+  .review {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    background-image: url(../img/cards-mobile.png);
+    background-position: bottom right;
+  }
+  .card_footer_labels {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .card_footer_prices {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card_footer {
+    padding: 20px 15px;
+    border: none;
+  }
+  .card_footer,
+  .card_footer_prices {
+    height: auto;
+  }
+  .card_footer_price {
+    width: 50%;
+    max-width: 110px;
+    margin-top: 20px;
+  }
+  .card_footer_order {
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+  }
+  .footer_label {
+    white-space: nowrap;
+    margin-top: 5px;
+  }
+
+  .footer_label.great {
+    padding: 6px 10px;
+  }
+
+  .info-bar_result {
+    width: 76%;
+  }
+
+  .card_title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .card_support_item {
+    margin-top: 5px;
+    margin-right: 0;
+  }
+
+  .mobile_card_button {
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .btn-atom,
+  .btn-primary {
+    min-width: 260px;
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .header_title {
+    font-size: 26px;
+    line-height: 31px;
+  }
+  .header_text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .card-label,
+  .mobile-more-details {
+    display: flex;
+  }
+
+  .card_description,
+  .card_condition_list,
+  .card_footer {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    margin: 0;
+    transition: all 0.2s;
+  }
+
+  .card-label {
+    height: 45px;
+    padding: 0 15px;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Lato Black";
+    color: #333e50;
+    border-top: 1px solid #e8ecef;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .card-label-footer {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .card_footer,
+  .card_condition_list,
+  .card_description {
+    padding: 0 15px;
+  }
+
+  .card-label img {
+    transition: transform 0.2s ease;
+  }
+
+  .card-accordion:checked + label img {
+    transform: rotate(180deg);
+  }
+
+  #card-description-first:checked ~ .card_description,
+  #card-bonus-first:checked ~ .card_condition_list,
+  #card-settings-first:checked ~ .card_footer,
+  #card-description-second:checked ~ .card_description,
+  #card-bonus-second:checked ~ .card_condition_list,
+  #card-settings-second:checked ~ .card_footer,
+  #card-description-third:checked ~ .card_description,
+  #card-bonus-third:checked ~ .card_condition_list,
+  #card-settings-third:checked ~ .card_footer {
+    max-height: 1000px;
+    padding-bottom: 20px;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .review_title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .review-button {
+    width: 170px;
+    min-width: 170px;
+    margin-top: 15px;
+  }
+  .review_description {
+    margin-top: 8px;
+  }
+
+  .dropdown_list {
+    right: auto;
+  }
+
+  .card_condition_list_item:first-child {
+    margin-top: 4px;
+  }
+
+  .footer_price_description {
+    font-size: 13px;
+  }
+
+  .footer_price_sum {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 4px;
+  }
+
+  .footer_labels {
+    margin-top: 20px;
+  }
+
+  .sub-header_card:after {
+    height: 36px;
+  }
+}

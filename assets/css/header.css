@@ -1,0 +1,98 @@
+header {
+  background-color: #fff;
+  box-shadow: 0px 4px 20px #eef0f2;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.sub-header {
+  height: 90px;
+  border-top: 1px solid #e8ecef;
+}
+
+.header_title {
+  font-family: "Lato Black";
+  font-size: 30px;
+  line-height: 36px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre;
+}
+
+.header_text {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 12px;
+}
+
+header .container {
+  padding: 20px 0;
+}
+
+.sub-header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.sub-header_card {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 89px;
+  min-width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 6px 14px 0 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sub-header_card:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 1px;
+  height: 65px;
+  background-color: #f1f4f7;
+}
+
+.sub-header_card:first-child {
+  max-width: 189px;
+  padding: 6px 14px 0 0;
+}
+
+.sub-header_card:last-child {
+  max-width: 189px;
+  padding: 6px 0 0 14px;
+}
+
+.sub-header_card:last-child:after {
+  display: none;
+}
+
+.sub-header_card p {
+  max-width: 100%;
+  font-family: "Lato Black";
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 9px;
+  transition: color 0.2s ease;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre;
+}
+
+.sub-header_card:hover {
+  background-color: #f8fbfe;
+}
+
+.sub-header_card:hover p {
+  color: #95ce5a;
+}

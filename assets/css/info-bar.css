@@ -1,0 +1,23 @@
+.info-bar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 16px;
+  color: #adb4bf;
+  letter-spacing: 0.1px;
+}
+
+.info-bar_sorted {
+  display: flex;
+  align-items: center;
+}
+
+.info-bar_sort {
+  display: flex;
+}
+
+.info-bar_update {
+  margin-right: 30px;
+}
